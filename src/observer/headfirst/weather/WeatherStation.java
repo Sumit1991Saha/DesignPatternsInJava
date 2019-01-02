@@ -4,6 +4,7 @@ import observer.headfirst.weather.display.CurrentConditionsDisplay;
 import observer.headfirst.weather.display.ForecastDisplay;
 import observer.headfirst.weather.display.StatisticsDisplay;
 
+//Example of Push style of observer pattern (ie Observer get the required data directly)
 public class WeatherStation {
 
 	public static void main(String[] args) {

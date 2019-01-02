@@ -4,6 +4,7 @@ import observer.headfirst.weatherobservable.display.CurrentConditionsDisplay;
 import observer.headfirst.weatherobservable.display.ForecastDisplay;
 import observer.headfirst.weatherobservable.display.StatisticsDisplay;
 
+//Example of Pull style of observer pattern (ie Observer get the data wrapped in an object and it needs to extract that)
 public class WeatherStation {
 
 	public static void main(String[] args) {
