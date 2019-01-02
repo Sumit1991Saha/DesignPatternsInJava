@@ -1,4 +1,4 @@
-package headfirst.designpatterns.observer.weather;
+package observer.headfirst.weather.api;
 
 public interface Subject {
 	public void registerObserver(Observer o);

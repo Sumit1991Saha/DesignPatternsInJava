@@ -1,4 +1,4 @@
-package observer.headfirst.designpatterns.swing;
+package observer.headfirst.swing;
 	
 import java.awt.*;
 import javax.swing.*;

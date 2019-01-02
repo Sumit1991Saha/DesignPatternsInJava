@@ -1,4 +1,4 @@
-package headfirst.designpatterns.observer.weatherobservable;
+package observer.headfirst.weatherobservable.display;
 
 public interface DisplayElement {
 	public void display();

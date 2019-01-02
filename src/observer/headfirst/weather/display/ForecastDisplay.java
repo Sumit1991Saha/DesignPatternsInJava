@@ -1,23 +1,23 @@
-package headfirst.designpatterns.observer.weatherobservable;
+package observer.headfirst.weather.display;
 
-import java.util.Observable;
-import java.util.Observer;
+import observer.headfirst.weather.api.Observer;
+import observer.headfirst.weather.WeatherData;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
 	private float lastPressure;
+	private WeatherData weatherData;
 
-	public ForecastDisplay(Observable observable) {
-		observable.addObserver(this);
+	public ForecastDisplay(WeatherData weatherData) {
+		this.weatherData = weatherData;
+		weatherData.registerObserver(this);
 	}
 
-	public void update(Observable observable, Object arg) {
-		if (observable instanceof WeatherData) {
-			WeatherData weatherData = (WeatherData)observable;
-			lastPressure = currentPressure;
-			currentPressure = weatherData.getPressure();
-			display();
-		}
+	public void update(float temp, float humidity, float pressure) {
+        lastPressure = currentPressure;
+		currentPressure = pressure;
+
+		display();
 	}
 
 	public void display() {

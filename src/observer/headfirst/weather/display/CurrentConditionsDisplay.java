@@ -1,5 +1,8 @@
-package headfirst.designpatterns.observer.weather;
-	
+package observer.headfirst.weather.display;
+
+import observer.headfirst.weather.api.Observer;
+import observer.headfirst.weather.api.Subject;
+
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;
 	private float humidity;
